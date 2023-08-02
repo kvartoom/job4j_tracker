@@ -18,9 +18,6 @@ public class Error {
     }
 
     public Error() {
-        active = true;
-        status = 25;
-        message = "Нет Ошибки";
     }
 
     public static void main(String[] args) {
