@@ -8,11 +8,11 @@ public class Item {
 
     private LocalDateTime created = LocalDateTime.now();
 
-    public LocalDateTime getDateTime() {
-        return created;
+    public Item() {
     }
 
-    public Item() {
+    public LocalDateTime getDateTime() {
+        return created;
     }
 
     public Item(String name) {
