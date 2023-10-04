@@ -8,11 +8,11 @@ public class MagicBall {
         Scanner input = new Scanner(System.in);
         String name = input.nextLine();
         int answer = new Random().nextInt(3);
-        String str = switch (answer) {
+        name = switch (answer) {
                 case 0 -> "Да";
                 case 1 -> "Нет";
                 default -> "Может быть";
             };
-            System.out.println(str);
+            System.out.println(name);
         }
 }
