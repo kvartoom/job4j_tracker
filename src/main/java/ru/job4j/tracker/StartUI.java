@@ -17,6 +17,16 @@ public class StartUI {
                 Item item = new Item(name);
                 tracker.add(item);
                 System.out.println("Добавленная заявка: " + item);
+            } else if (select == 1) {
+                System.out.println("=== Ввод всех заявок ===");
+                Item[] items = tracker.findAll();
+                if (items.length > 0) {
+                    for (Item item : items) {
+                        System.out.println(item);
+                    }
+                } else {
+                    System.out.println("Хранилище не содержит заявок");
+                }
             } else if (select == 6) {
                 run = false;
             }
@@ -33,7 +43,7 @@ public class StartUI {
         for (int i = 0; i < menu.length; i++) {
             System.out.println(i + ". " + menu[i]);
         }
-        }
+    }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
