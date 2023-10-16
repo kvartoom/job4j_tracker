@@ -50,7 +50,7 @@ public class StartUI {
 
     public static void findItemById(Input input, Tracker tracker) {
         System.out.println("===Вывод заявки по id===");
-        int id = Integer.parseInt(input.askStr("Введите id"));
+        int id = input.askInt("Введите id");
         Item item = tracker.findById(id);
         if (item != null) {
             System.out.println(item);
